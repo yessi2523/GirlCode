@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="jumbotron">
+  <h1>Sherman Dining Hall</h1>
+    <p class="text-warning">
+      Make a review!
+    </p>
+</div>
+
+
+
+<form method="POST" action="/review" style="background-color: #e8e8e8; width: 50%; position: relative; border: 25px solid transparent; margin: auto; padding: 15px; text-align: center; border-radius: 10px;">
+
+  <h2>Which dining hall are you reviewing?</h2>
+  <select name='location'>
+    <option>Sherman</option>
+    <option>Usdan</option>
+  </select>
+
+  <h2>What is your rating of the food in general?</h2>
+
+      <select name='stars'>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+
+
+  <!-- class="text-center" -->
+  <h2>Critique or comments on the food:</h2>
+  <textarea
+      class="form-control"
+      name="critique"
+      rows="4"
+      style="resize: vertical;"
+      cols="40"
+      maxlength="140"></textarea>
+
+  <br>
+  <input type="submit">
+
+
+</form>
+
+<br><br>
+
+
+{% endblock %}
