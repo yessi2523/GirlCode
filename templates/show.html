@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1 class="bg-primary">Brandeis Dining Hall Reviews</h1>
+
+{% for review in reviews %}
+<div class="bg-info">
+  {{review.location}} .. {{review.stars}} .. {{review.time}} <br>
+  {{review.critique}}
+</div>
+<hr>
+{% endfor %}
+
+{% endblock %}
