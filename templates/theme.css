@@ -1,0 +1,13 @@
+.mid {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 200px;
+}
+
+.mid, img {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  width: 75%;
+}

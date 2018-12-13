@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <title>GirCode!</title>
+  <link rel="stylesheet" href="theme.css">
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet"
 	      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -22,15 +23,17 @@
 	      content="width=device-width, initial-scale=1">
 
 </head>
-<body>
+<body style="background-color: #90CEF3;">
   <div class="container">
+    <br>
     <div class="text-center">
+
       <a class="btn btn-primary" href="/">Home</a>
       <a class="btn btn-primary" href="/team">Team</a>
-      <a class="btn btn-primary" href="/logout">Logout</a>
+      <!-- <a class="btn btn-primary" href="/logout">Logout</a> -->
 
     </div>
-
+    <br>
     <div id="content">{% block content %}{% endblock %}</div>
   </div>
 
